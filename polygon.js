@@ -68,14 +68,10 @@ Element.prototype.gridTable = function(x,y) {
 		rows[i].setAttribute('row',i);
 		table.x(rows[i]);
 		for(z=0;z<x;z++){
-			var r = random();
-			var g = random();
-			var b = random();
 			columns[z] = document.createElement('td');
 			columns[z].setAttribute('col',z);
 			columns[z].style.width = rows[i].style.width / x;
 			columns[z].style.height = body.style.height / y;
-			columns[z].setColor('rgb('+r+','+g+','+b+')');
 			rows[i].appendChild(columns[z]);
 		}
 	}
