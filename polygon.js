@@ -2,7 +2,6 @@
 var xaxis = this.screen.width+'px';
 var yaxis = this.screen.height+'px';
 var body = document.getElementById('body');
-//body.style.width = '100%';
 var row = document.createAttribute('row');
 var col = document.createAttribute("column");
 
