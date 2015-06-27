@@ -7,7 +7,7 @@ var col = document.createAttribute("column");
 
 
 /*
-Athor  Nicholas Adam 
+Author  Nicholas Adam 
 Thu Jun 25 2015 23:09:19 GMT+0200 (CEST)
 Vienna
 
