@@ -71,7 +71,7 @@ Element.prototype.gridTable = function(x,y) {
 			columns[z].setAttribute('col',z);
 			columns[z].style.width = rows[i].style.width / x;
 			columns[z].style.height = body.style.height / y;
-			rows[i].appendChild(columns[z]);
+			rows[i].x(columns[z]);
 		}
 	}
 
