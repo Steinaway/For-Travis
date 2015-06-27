@@ -13,6 +13,10 @@ Thu Jun 25 2015 23:09:19 GMT+0200 (CEST)
 Vienna
 
 */
+
+/*
+ shortcut string appending 
+*/
 Element.prototype.s = function(s) {
 	x = document.createTextNode(s);
 	this.appendChild(x);
@@ -35,8 +39,6 @@ Element.prototype.createButton = function(val,id) {
 	b.style.width = '100%';
 	b.style.height = '100%';
 	b.id = id;
-	//b.style.position = 'relative';
-	//v = val.split(' ');
 	b.style.fontSize = '24px'
 	b.s(val);
 	this.x(b);
@@ -46,8 +48,6 @@ Element.prototype.createInput = function(val,id) {
 	i.style.width = '100%';
 	i.style.height = '100%';
 	i.id = id;
-	//b.style.position = 'relative';
-	//v = val.split(' ');
 	i.style.fontSize = '24px'
 	i.s(val);
 	this.x(i);
@@ -55,7 +55,9 @@ Element.prototype.createInput = function(val,id) {
 function random() {
 	return Math.floor(Math.random() * (255));
 }
-
+/*
+	grid Table returns a Node with a Table custom sized e.g (7,7)
+*/
 Element.prototype.gridTable = function(x,y) {
 	var table = document.createElement('table');
 	table.setAttribute('id','grid');
@@ -82,7 +84,9 @@ Element.prototype.gridTable = function(x,y) {
 	table.style.height = '800px';
 	this.x(table);
 }
-
+/*
+	You can select one cell out of the grid and manipulate it by simply typing [3,4].grid();
+*/
 Array.prototype.grid = function() {
 	var table  = document.getElementById('grid');
 	var child = table.childNodes;
