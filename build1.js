@@ -9,7 +9,7 @@ div.style.fontFamily = 'Georgia';
 div.style.opacity =  '0.6';
 div.style.color = 'white';
 div.style.padding = '20px'
-div.s('Travis, theese are the colors that you smile every day  ');
+div.s('Travis, these are the colors that you smile every day  ');
 body.x(div);
 
 body.gridTable(10,10);
